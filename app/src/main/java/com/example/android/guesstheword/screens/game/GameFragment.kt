@@ -60,9 +60,7 @@ class GameFragment : Fragment() {
         viewModel.eventGameFinish.observe(this, Observer<Boolean> { hasFinished ->
             if (hasFinished) gameFinished()
         })
-
         return binding.root
-
     }
 
     private fun gameFinished() {
